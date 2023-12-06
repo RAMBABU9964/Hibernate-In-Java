@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+ "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+ "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hub_hb</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">Ram@8660045085</property>
+  
+  <property name="hbm2ddl.auto">create</property>
+  <property name="hibernate.dialent">org.hibernate.dialect.MySQL8Dialect</property>
+  <property name="show_sql">true</property>
+  
+  <mapping class="com.kn.hib.entity.Student"/>
+ </session-factory>
+
+</hibernate-configuration>
